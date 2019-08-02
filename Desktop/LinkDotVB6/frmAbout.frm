@@ -2,14 +2,14 @@ VERSION 5.00
 Begin VB.Form frmAbout 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "LINK DOTS - About"
-   ClientHeight    =   1785
+   ClientHeight    =   5085
    ClientLeft      =   2760
    ClientTop       =   3750
    ClientWidth     =   6030
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   1785
+   ScaleHeight     =   5085
    ScaleWidth      =   6030
    ShowInTaskbar   =   0   'False
    Begin VB.CommandButton OKButton 
@@ -20,16 +20,24 @@ Begin VB.Form frmAbout
       Top             =   120
       Width           =   1215
    End
+   Begin VB.Label lblExplain 
+      Caption         =   $"frmAbout.frx":0000
+      Height          =   3015
+      Left            =   120
+      TabIndex        =   4
+      Top             =   1920
+      Width           =   4575
+   End
    Begin VB.Label lblDescription 
-      Caption         =   "The game ""Link Dots"" created for the purposes of the ICS4U culminating assignment. "
-      Height          =   495
+      Caption         =   $"frmAbout.frx":0376
+      Height          =   735
       Left            =   120
       TabIndex        =   3
       Top             =   1080
       Width           =   4455
    End
    Begin VB.Label lblVersion 
-      Caption         =   "Version 1"
+      Caption         =   "Version 2 (Final)"
       Height          =   255
       Left            =   120
       TabIndex        =   2

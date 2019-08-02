@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin VB.Form frmStart 
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "LINK DOTS - Menu (Version 1)"
+   Caption         =   "LINK DOTS - Menu (Version 2)"
    ClientHeight    =   4545
    ClientLeft      =   150
    ClientTop       =   795
@@ -185,6 +185,12 @@ Begin VB.Form frmStart
          Caption         =   "About"
       End
    End
+   Begin VB.Menu mnuHistory 
+      Caption         =   "History"
+      Begin VB.Menu mnuLeaderboard 
+         Caption         =   "Leaderboard"
+      End
+   End
 End
 Attribute VB_Name = "frmStart"
 Attribute VB_GlobalNameSpace = False
@@ -209,14 +215,20 @@ End Sub
 Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
     Unload frmMain
     Unload frmImages
-    Unload frmDebug
     Unload frmAbout
     Unload frmTutorial
+    Unload frmScores
     Unload frmStart
 End Sub
 
 Private Sub mnuAbout_Click()
     frmAbout.Show
+End Sub
+
+Private Sub mnuLeaderboard_Click()
+    frmScores.Show
+    frmScores.ReadLeaderboard
+    frmScores.ShowGrid
 End Sub
 
 Private Sub mnuTutorial_Click()

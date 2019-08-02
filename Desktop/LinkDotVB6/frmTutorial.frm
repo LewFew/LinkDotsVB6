@@ -1,12 +1,14 @@
 VERSION 5.00
 Begin VB.Form frmTutorial 
    BackColor       =   &H00FFFFFF&
-   Caption         =   "Link Dots V1 - How to play"
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Link Dots V2 - How to play"
    ClientHeight    =   6555
-   ClientLeft      =   120
-   ClientTop       =   465
+   ClientLeft      =   45
+   ClientTop       =   390
    ClientWidth     =   9900
    LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
    ScaleHeight     =   6555
    ScaleWidth      =   9900
    StartUpPosition =   3  'Windows Default
@@ -58,7 +60,7 @@ Private Sub cmdBack_Click()
 End Sub
 
 Private Sub cmdNext_Click()
-    If (Frame < 3) Then
+    If (Frame < frmImages.imgTutorial.UBound) Then
         Frame = Frame + 1
     End If
     LoadFrame
