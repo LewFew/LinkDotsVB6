@@ -7,5 +7,5 @@ as this project is on github, don't be. This culminating project is specific to 
 ## Screenshots/Sample Gameplay:
 ![Generic Gameplay](LinkDots3_2.gif)
 ![Star Platinum](LinkDots4.gif)
-![Guiding Light](LinkDots6.gif)
-![End of Level](LinkDots7.gif)
+![Guiding Light](LinkDots7.gif)
+![End of Level](LinkDots6.gif)
